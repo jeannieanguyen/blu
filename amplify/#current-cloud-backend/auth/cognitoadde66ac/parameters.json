@@ -20,8 +20,8 @@
     "policyName": "cognitoadde66ac-sns-policy",
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "Your verification code",
-    "emailVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Verify your email",
+    "emailVerificationMessage": "Welcome to Blu. Your verification code is {####}.",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [
@@ -35,9 +35,13 @@
     ],
     "userpoolClientName": "cognitoadde66ac_app_client",
     "userpoolClientGenerateSecret": true,
-    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientRefreshTokenValidity": "30",
     "userpoolClientReadAttributes": [
-        "email"
+        "email",
+        "name",
+        "nickname",
+        "preferred_username",
+        "picture"
     ],
     "mfaLambdaRole": "cognitoadde66ac_totp_lambda_role",
     "mfaLambdaLogPolicy": "cognitoadde66ac_totp_lambda_log_policy",
@@ -46,12 +50,20 @@
     "userpoolClientLambdaRole": "cognitoadde66ac_userpoolclient_lambda_role",
     "userpoolClientLogPolicy": "cognitoadde66ac_userpoolclient_lambda_log_policy",
     "userpoolClientLambdaPolicy": "cognitoadde66ac_userpoolclient_lambda_iam_policy",
-    "userpoolClientSetAttributes": false,
-    "useDefault": "default",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
     "unAuthRoleName": "blu-20181211105424-unauthRole",
     "authRoleName": "blu-20181211105424-authRole",
     "unAuthRoleArn": "arn:aws:iam::187681693919:role/blu-20181211105424-unauthRole",
     "authRoleArn": "arn:aws:iam::187681693919:role/blu-20181211105424-authRole",
     "resourceName": "cognitoadde66ac",
-    "authSelections": "identityPoolAndUserPool"
+    "authSelections": "identityPoolAndUserPool",
+    "userpoolClientWriteAttributes": [
+        "name",
+        "nickname",
+        "preferred_username",
+        "picture",
+        "profile",
+        "email"
+    ]
 }

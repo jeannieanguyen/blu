@@ -6,7 +6,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <Blob />
-        <h1>Blü</h1>
+        <h1>BLÜ</h1>
       </div>
     );
   }

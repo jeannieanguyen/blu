@@ -1,5 +1,5 @@
 .home {
-  background: #F2F8FA;
+  background: white;
   position: absolute;
   /* animation: dot-expand infinite 2s linear; */
   color: white;
@@ -16,7 +16,8 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 115px auto;
+  margin: 125px auto;
+  font-weight: 300;
 }
 
 svg,
@@ -38,7 +39,7 @@ svg circle {
   cx: 150;
   cy: 145;
   r: 100;
-  transform-origin: 145px 150px;
+  transform-origin: 165px 150px;
 }
 
 @keyframes from360to0 {
@@ -51,7 +52,7 @@ svg circle {
   cx: 150;
   cy: 155;
   r: 100;
-  transform-origin: 155px 150px;
+  transform-origin: 175px 150px;
 }
 
 #Circle3 {
@@ -59,7 +60,7 @@ svg circle {
   cx: 145;
   cy: 150;
   r: 100;
-  transform-origin: 150px 145px;
+  transform-origin: 150px 165px;
 }
 
 #Circle4 {
@@ -67,19 +68,19 @@ svg circle {
   cx: 155;
   cy: 150;
   r: 100;
-  transform-origin: 150px 155px;
+  transform-origin: 150px 175px;
 }
 
 @keyframes colorchange
     {
-      0%   {fill: #87BDD8;}
-      10%  {fill: #AABEBF;}
-      20%  {fill: #E7E0B4;}
-      30%  {fill: #A1C5D3;}
-      40% {fill: #95BBA4;}
-      50%   {fill: #87BDD8;}
-      60%  {fill: #AABEBF;}
-      70%  {fill: #E7E0B4;}
-      80%  {fill: #A1C5D3;}
-      100% {fill: #95BBA4;}
+      0%   {fill: #ffedb8;}
+      10%  {fill: #ffd1b4;}
+      20%  {fill: #ffd6ef;}
+      30%  {fill: #ffd6ef;}
+      40% {fill: #ffedb8;}
+      50%   {fill: #b4e4c9;}
+      60%  {fill: #a5d9d8;}
+      70%  {fill: #a5d9d8;}
+      80%  {fill: #dee4eb;}
+      100% {fill: #afca8a;}
     }

@@ -19,7 +19,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/blu-20181211105424-deployment/amplify-cfn-templates/auth/cognitoadde66ac-cloudformation-template.yml",
 				"logicalId": "authcognitoadde66ac"
 			},
-			"lastPushTimeStamp": "2018-12-11T19:10:29.021Z",
+			"lastPushTimeStamp": "2018-12-11T19:16:42.112Z",
 			"output": {
 				"AppClientSecret": "155vb7u425dcmhgbagsj43gsdocvakpvsr1t08qmm9rv4sukck2f",
 				"UserPoolId": "us-east-2_8RfgLVRM0",
@@ -29,7 +29,8 @@
 				"IdentityPoolName": "cognitoadde66ac_identitypool_adde66ac",
 				"UserPoolName": "cognitoadde66ac_userpool_adde66ac"
 			},
-			"lastPushDirHash": "hnircxgj9pfI1oRW6wNYfPffO7w="
+			"lastPushDirHash": "rOH+i/fY69dZ8HOk5WCHksmZ+N4=",
+			"[object Object]": {}
 		}
 	},
 	"api": {
@@ -49,7 +50,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/blu-20181211105424-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"logicalId": "apiblu"
 			},
-			"lastPushTimeStamp": "2018-12-11T19:10:29.021Z",
+			"lastPushTimeStamp": "2018-12-11T19:16:42.107Z",
 			"lastPushDirHash": "OU7ZynHNBC5+L8M2XO3Pz8WLBRs="
 		}
 	},
@@ -61,7 +62,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/blu-20181211105424-deployment/amplify-cfn-templates/hosting/template.json",
 				"logicalId": "hostingS3AndCloudFront"
 			},
-			"lastPushTimeStamp": "2018-12-11T19:10:29.021Z",
+			"lastPushTimeStamp": "2018-12-11T19:16:42.110Z",
 			"output": {
 				"S3BucketSecureURL": "https://blu-20181211105758-hostingbucket.s3.amazonaws.com",
 				"WebsiteURL": "http://blu-20181211105758-hostingbucket.s3-website.us-east-2.amazonaws.com",
@@ -79,7 +80,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/blu-20181211105424-deployment/amplify-cfn-templates/storage/moods-cloudformation-template.json",
 				"logicalId": "storagemoods"
 			},
-			"lastPushTimeStamp": "2018-12-11T19:10:29.021Z",
+			"lastPushTimeStamp": "2018-12-11T19:16:42.111Z",
 			"output": {
 				"PartitionKeyName": "date",
 				"SortKeyName": "displayName",
