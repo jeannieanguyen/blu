@@ -1,0 +1,85 @@
+.home {
+  background: #F2F8FA;
+  position: absolute;
+  /* animation: dot-expand infinite 2s linear; */
+  color: white;
+  letter-spacing: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 45vw;
+}
+
+h1 {
+  font-size: 36px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 115px auto;
+}
+
+svg,
+svg circle {
+  fill: #87BDD8;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@keyframes from0to360 {
+  from{transform:rotate(0);}
+  to{transform:rotate(360deg);}
+}
+
+#Circle1 {
+  animation: from0to360 1s linear infinite, colorchange infinite 30s linear;
+  cx: 150;
+  cy: 145;
+  r: 100;
+  transform-origin: 145px 150px;
+}
+
+@keyframes from360to0 {
+  from{transform:rotate(360deg);  }
+  to{transform:rotate(0deg); }
+}
+
+#Circle2 {
+  animation: from360to0 2s linear infinite, colorchange infinite 30s linear;
+  cx: 150;
+  cy: 155;
+  r: 100;
+  transform-origin: 155px 150px;
+}
+
+#Circle3 {
+  animation: from0to360 3s linear infinite, colorchange infinite 30s linear;
+  cx: 145;
+  cy: 150;
+  r: 100;
+  transform-origin: 150px 145px;
+}
+
+#Circle4 {
+  animation: from360to0 2.5s linear infinite, colorchange infinite 30s linear;
+  cx: 155;
+  cy: 150;
+  r: 100;
+  transform-origin: 150px 155px;
+}
+
+@keyframes colorchange
+    {
+      0%   {fill: #87BDD8;}
+      10%  {fill: #AABEBF;}
+      20%  {fill: #E7E0B4;}
+      30%  {fill: #A1C5D3;}
+      40% {fill: #95BBA4;}
+      50%   {fill: #87BDD8;}
+      60%  {fill: #AABEBF;}
+      70%  {fill: #E7E0B4;}
+      80%  {fill: #A1C5D3;}
+      100% {fill: #95BBA4;}
+    }

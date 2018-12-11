@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Loved+by+the+King');
+
 .App {
   text-align: center;
+  font-family: 'Loved by the King', cursive;
 }
 
 .App-logo {
@@ -30,3 +34,5 @@
     transform: rotate(360deg);
   }
 }
+
+@import "styles/home.css";
