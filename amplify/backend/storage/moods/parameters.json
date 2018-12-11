@@ -1,0 +1,7 @@
+{
+    "tableName": "moods",
+    "partitionKeyName": "date",
+    "partitionKeyType": "S",
+    "sortKeyName": "displayName",
+    "sortKeyType": "S"
+}

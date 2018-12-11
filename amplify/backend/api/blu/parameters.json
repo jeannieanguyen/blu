@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "blu",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoadde66ac",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://blu-20181211105424-deployment/amplify-appsync-files/schema.graphql.1544554981433",
+    "ResolverBucket": "blu-20181211105424-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1544554981433"
+}
