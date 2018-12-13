@@ -7,6 +7,7 @@ export default class Home extends Component {
       <div className="home">
         <Blob />
         <h1>BLÜ</h1>
+        <button> Login </button>
       </div>
     );
   }

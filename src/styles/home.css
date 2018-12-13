@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 45vw;
+  padding-top: 30vw;
 }
 
 h1 {
@@ -84,3 +84,23 @@ svg circle {
       80%  {fill: #dee4eb;}
       100% {fill: #afca8a;}
     }
+
+button {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 125px;
+  display: block;
+  background: #333;
+  outline: 0;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Raleway;
+  letter-spacing: 4px;
+};
