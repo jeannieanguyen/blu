@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import Blob from "./blob";
+import { history } from "../store";
+import Blob from "../components/blob";
 
 export default class Home extends Component {
+  routeToLogin = () => {
+    history.push("/login");
+  };
   render() {
     return (
       <div className="home">
         <Blob />
         <h1>BLÜ</h1>
-        <button> Login </button>
+        <button onClick={this.routeToLogin}> Login </button>
       </div>
     );
   }

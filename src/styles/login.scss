@@ -1,0 +1,39 @@
+.login {
+  background: white;
+  position: absolute;
+  /* animation: dot-expand infinite 2s linear; */
+  color: white;
+  letter-spacing: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30vw 30px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.form-control,
+.form-control:hover,
+.form-control:focus {
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px;
+  box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  margin: 10px auto;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  outline: 0;
+
+  &[type=text] {
+    background-color: #AFC1C6;
+  }
+
+  &[type=password] {
+    background: #B4DBC5;
+  }
+}

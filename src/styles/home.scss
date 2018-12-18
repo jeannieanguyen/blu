@@ -27,11 +27,35 @@ svg circle {
   left: 0;
   right: 0;
   margin: 0 auto;
+  transition: all 6s ease-in-out;
+
+  &.grow {
+    transform: scale(5);
+    opacity: 1;
+
+  }
+
+  &.shrink {
+    transform: scale(0.1);
+    opacity: 0.1;
+  }
+
+  &.static {
+    #Circle1, #Circle2, #Circle3, #Circle4 {
+      animation: colorchange infinite 30s linear ;
+    }
+
+  }
 }
 
 @keyframes from0to360 {
   from{transform:rotate(0);}
   to{transform:rotate(360deg);}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 #Circle1 {
@@ -82,8 +106,13 @@ svg circle {
       60%  {fill: #a5d9d8;}
       70%  {fill: #a5d9d8;}
       80%  {fill: #dee4eb;}
-      100% {fill: #afca8a;}
+      90% {fill: #afca8a;}
+      100%   {fill: #ffedb8;}
     }
+
+.color-change {
+  animation: colorchange infinite 3s, fadeIn 6s infinite;
+}
 
 button {
   position: absolute;
@@ -96,11 +125,12 @@ button {
   display: block;
   background: #333;
   outline: 0;
-  padding: 10px 20px;
+  padding: 10px 0px;
   border: 0;
   border-radius: 6px;
   color: white;
   text-transform: uppercase;
   font-family: Raleway;
   letter-spacing: 4px;
+  animation: grow linear 3s;
 };

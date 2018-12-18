@@ -4,6 +4,7 @@ export default class Blob extends Component {
   render() {
     return (
       <svg
+        className={this.props.className || "blob"}
         id="organic-blob"
         width="300"
         height="300"

@@ -35,4 +35,15 @@
   }
 }
 
-@import "styles/home.css";
+h2 {
+  color: #89BFD0;
+  padding-top: 50px;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+@import "styles/home";
+@import "styles/login";
+@import "styles/moods";
