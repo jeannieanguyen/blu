@@ -9,30 +9,22 @@ import Moods from "./views/moods";
 import MoodDetail from "./views/mood-detail";
 import Login from "./views/login";
 import Breathe from "./views/breathe";
+import Calendar from "./views/calendar";
+import Notes from "./views/notes";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      user: ""
-    };
-  }
-  login = username => {
-    this.setState({
-      user: username
-    });
-  };
   render() {
-    const { user } = this.state;
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <div className="App">
             <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} login={this.login} />
-            <Route exact path="/moods" component={Moods} user={user} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/moods" component={Moods} />
             <Route exact path="/mood/:mood" component={MoodDetail} />
             <Route exact path="/breathe" component={Breathe} />
+            <Route exact path="/calendar" component={Calendar} />
+            <Route exact path="/notes" component={Notes} />
           </div>
         </ConnectedRouter>
       </Provider>

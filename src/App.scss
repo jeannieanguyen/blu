@@ -44,6 +44,11 @@ h3 {
   margin-top: 0px;
 }
 
+.container {
+  padding-top: 100px;
+}
+
 @import "styles/home";
 @import "styles/login";
 @import "styles/moods";
+@import "styles/calendar";

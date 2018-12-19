@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { history } from "../store";
+import { recordMood } from "../modules/actions";
 
-export default class MoodCircle extends Component {
+class MoodCircle extends Component {
   goToMood = mood => {
-    history.push(`/mood/${mood}`);
+    this.props.recordMood(mood);
+    history.push(`/mood/${mood.id}`);
   };
   render() {
     const style = {
@@ -13,10 +16,14 @@ export default class MoodCircle extends Component {
       <div
         className="mood-circle"
         style={style}
-        onClick={() => this.goToMood(this.props.mood.id)}
+        onClick={() => this.goToMood(this.props.mood)}
       >
         {this.props.mood.id}
       </div>
     );
   }
 }
+export default connect(
+  null,
+  { recordMood }
+)(MoodCircle);

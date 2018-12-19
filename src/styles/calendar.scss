@@ -1,0 +1,82 @@
+.calendar {
+  width: 100%;
+  padding: 80px 25px 25px 25px;
+  text-align: center;
+  margin: 0 auto;
+
+  h2 {
+    font-family: 'Raleway';
+    padding-left: 2px;
+    padding-top: 0px;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  hr {
+    margin: 25px auto;
+    opacity: 0.2;
+  }
+}
+.calendar-block {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+
+  p {
+    padding-top: 5px;
+  }
+  span {
+    color: white;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+  }
+}
+.block-wrapper {
+  text-align: left;
+}
+
+.breathe-button {
+  display: block;
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  padding: 10px;
+  background: rgba(247, 183, 156, 0.6);
+  margin: 25px auto;
+
+  img {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    height: 35px;
+  }
+
+  span {
+    line-height: 35px;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.4) transparent;
+  bottom: 0;
+  right: 0;
+}

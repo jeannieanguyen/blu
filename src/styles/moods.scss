@@ -14,48 +14,79 @@
 }
 
 .mood-detail {
-  .tagline {
-    font-size: 18px;
-    text-align: left;
-  }
-
-  .encouragement {
-    color: #BED9CD;
-  }
+  padding-top: 25px;
 
   img {
     height: 60px;
     width: 60px;
   }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    margin: 25px;
-    align-items: center;
-
-
-    &.header {
-      border-bottom: 3px solid #F7B79C;
-      padding: 35px 10px;
-    }
-  }
-
-  .column {
-    flex-direction: column;
-    align-items: center;
-    &.right {
-      text-align: left;
-      padding-left: 10px;
-      p {
-        margin: 0;
-      }
-    }
-    &.left {
-      text-align: right;
-    }
-  }
   .tip-row {
     padding: 15px 10px;
   }
+
+  hr {
+    margin: 25px 25px;
+    width: calc(100% - 50px);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  align-items: center;
+
+
+  &.header {
+    border-bottom: 3px solid #F7B79C;
+    padding: 35px 10px;
+  }
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+  &.right {
+    text-align: left;
+    padding-left: 10px;
+    p {
+      margin: 0;
+    }
+  }
+  &.left {
+    text-align: right;
+  }
+}
+
+.tagline {
+  font-size: 18px;
+  text-align: left;
+}
+
+.encouragement {
+  color: #BED9CD;
+}
+
+.notes {
+  .form-control {
+    height: 300px;
+    color: #333;
+  }
+}
+
+hr {
+  border-top: 3px solid #F7B79C;
+  margin: 50px auto;
+}
+
+.notes-title {
+  font-size: 16px;
+  padding: 0 35px;
+  text-align: left;
+}
+
+.notes {
+  padding: 0 45px;
+  text-align: left;
+  color: #BED9CD;
 }

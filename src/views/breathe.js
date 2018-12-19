@@ -16,14 +16,22 @@ export default class Breathe extends Component {
       breathing: true
     });
 
-    setInterval(() => {
+    this.interval = setInterval(() => {
       this.setState({
         inhale: !this.state.inhale,
-        breaths: this.state.breaths + 1
+        breaths: !this.state.inhale
+          ? this.state.breaths + 1
+          : this.state.breaths
       });
+      console.log(this.state.breaths);
       if (this.state.breaths === 4) {
-        clearInterval();
-        this.setState({ breathing: false });
+        clearInterval(this.interval);
+        this.setState({
+          breathing: false,
+          breaths: 0,
+          inhale: false
+        });
+        history.push("/calendar");
       }
     }, 6000);
   };
@@ -32,8 +40,16 @@ export default class Breathe extends Component {
     const text = this.state.inhale ? "INHALE" : "EXHALE";
     return (
       <>
-        <h2 className="color-change">{text}</h2>
+        {this.state.breaths > 0 && <h2 className="color-change">{text}</h2>}
         <Blob className={blobSize} />
+        <div className="dots">
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+        </div>
       </>
     );
   };
