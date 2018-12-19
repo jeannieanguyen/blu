@@ -17,7 +17,7 @@ class Calendar extends Component {
   };
   render() {
     const { day, moodDays } = this.props;
-    console.log(day);
+
     return (
       <div className="calendar">
         <Navbar text="LOGOUT" callback={this.goToHome} />
@@ -35,7 +35,7 @@ class Calendar extends Component {
         )}
         <button className="breathe-button" onClick={this.goToBreathe}>
           <img src={`${S3_ASSET_PATH}lotus.png`} />
-          <span>TAKE A BREATHE</span>
+          <span>TAKE A BREATH</span>
         </button>
         <div className="block-wrapper">
           <h2>2018</h2>

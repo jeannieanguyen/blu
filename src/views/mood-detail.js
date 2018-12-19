@@ -9,22 +9,23 @@ import MoodCircle from "../components/mood-circle";
 class MoodDetail extends Component {
   constructor(props) {
     super(props);
-
+    console.log(props);
     this.state = {
       mood: MOODS.find(mood => mood.id === props.match.params.mood),
-      notes: get(this.props.detail, "notes", "")
+      notes: get(props.detail, "notes", ""),
+      isDetail: props.location.pathname.indexOf("/mood/detail") > -1
     };
   }
   goToNotes = () => {
-    if (this.props.notes) {
+    if (this.state.isDetail) {
       history.push("/calendar");
     } else {
       history.push("/notes");
     }
   };
   render() {
-    console.log(this.props, this.state);
-    const { mood, notes } = this.state;
+    console.log(this.state);
+    const { mood, notes, isDetail } = this.state;
     const { tagline, encouragement, id, tipsTitle } = mood;
     const percentage = Math.floor(Math.random() * 100);
     return (
@@ -39,7 +40,7 @@ class MoodDetail extends Component {
             <p className="encouragement">{`${encouragement} ${percentage}% other users also felt ${id} today`}</p>
           </div>
         </div>
-        {notes && (
+        {isDetail && (
           <>
             <div className="notes-title">On this day...</div>
             <div className="notes">{notes}</div>

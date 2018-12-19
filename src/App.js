@@ -22,6 +22,7 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/moods" component={Moods} />
             <Route exact path="/mood/:mood" component={MoodDetail} />
+            <Route exact path="/mood/detail/:mood" component={MoodDetail} />
             <Route exact path="/breathe" component={Breathe} />
             <Route exact path="/calendar" component={Calendar} />
             <Route exact path="/notes" component={Notes} />

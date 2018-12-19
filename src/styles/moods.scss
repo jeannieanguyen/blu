@@ -28,6 +28,10 @@
     margin: 25px 25px;
     width: calc(100% - 50px);
   }
+
+  .row.header {
+    padding: 35px 0px;
+  }
 }
 
 .row {
@@ -88,5 +92,6 @@ hr {
 .notes {
   padding: 0 45px;
   text-align: left;
-  color: #BED9CD;
+  color: #333;
+  opacity: 0.6;
 }

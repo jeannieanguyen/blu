@@ -6,7 +6,7 @@ import { setMoodDetail } from "../modules/actions";
 class Block extends Component {
   selectMood = () => {
     this.props.setMoodDetail(this.props.day);
-    history.push(`/mood/${this.props.day.mood.id}`);
+    history.push(`/mood/detail/${this.props.day.mood.id}`);
   };
   render() {
     const { day } = this.props;
